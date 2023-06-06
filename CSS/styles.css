@@ -18,3 +18,26 @@ border: 1px solid #000000;
 border-radius: 4px;
 padding:15px 30px;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color:#3D4147;
+    
+
+    }
+ footer a{
+    display:inline-flex;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+    color: #DDB493;
+ }
+footer p{
+    display:inline-flex;
+    margin-top: 15px;
+    margin-left: 800px;
+    margin-right: 10px;
+    justify-content: space-between;
+}
