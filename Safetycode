@@ -1,0 +1,63 @@
+body {
+    font-family: 'Bungee Inline', cursive;
+    position: relative;
+    max-width: 1440px;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+
+}
+
+main{
+    flex:1;
+}
+
+.tophome{
+    display:flex;
+    max-width: 1440px;
+    max-height: 500px;
+}
+
+.home-photo{
+   
+    object-fit: fill;
+    max-width: 100%;
+    height: 50%;
+}
+.hometext {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+    NAVBAR
+
+    .navbar{
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #8AA1AC;
+        padding:15px;
+    }
+    
+    .navbar a{
+        text-decoration: none;
+        color:#3D4147;
+    }
+    .logo{
+        margin-right: 50px;
+    }
+    .list{
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+    #toggler
+    .navbar label{
+        display: none;
+    }
