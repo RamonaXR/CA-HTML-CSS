@@ -1,20 +1,44 @@
 body {
-    margin:0;
     font-family: 'Bungee Inline', cursive;
     position: relative;
-    min-height: 100vh;
+    max-width: 1440px;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+
 }
+
+main{
+    flex:1;
+}
+
+.tophome{
+    max-width: 1440px;
+    max-height: 500px;
+}
+.homephoto{
+    object-fit: scale-down;
+    width: 100%;
+    height: 50%;
+}
+
 header {
     display:flex;
     justify-content: space-between;
     background:#8AA1AC;
     color:#3D4147;
-    width: 1440px;
-    height: 50px;
+    min-height: 50px;
     text-align: center;
     white-space: nowrap;
 }
+a {
+    color:#3D4147;
+    text-decoration: none;
+}
+.font-solid{font-family: 'Bungee', cursive;
+}
 
+/*Setting a responsive navbar here*/
 .navbar{
     display:flex;
     flex-wrap:wrap;
@@ -61,16 +85,9 @@ header {
 }
 }
 
-a {
-    color:#3D4147;
-    text-decoration: none;
-}
-.font-solid{font-family: 'Bungee', cursive;}
 
-.bottomlogo{
-    display:flex
-    margrin-bottom:50px;
-}
+/*Working on footer*/
+
 .button{
     width: 156px;
 height: 42px;
@@ -82,14 +99,13 @@ padding:15px 30px;
 
 footer {
     width: 100%; 
-    position: absolute; 
     bottom: 0;
     display: flex;
     justify-content: space-between;
     background-color:#3D4147;
     color: #DDB493;
-    width: 1440px;
-    height: 50px;
+    min-height: 50px;
+    flex-wrap: wrap;
     
 
     }
@@ -105,7 +121,6 @@ footer {
 footer p{
     display:inline-flex;
     margin-top: 15px;
-    margin-left: 800px;
     margin-right: 10px;
     justify-content: space-between;
 }
