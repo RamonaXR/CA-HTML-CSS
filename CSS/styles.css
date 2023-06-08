@@ -1,4 +1,4 @@
-/*layouts*/
+/*Global layouts*/
 body {
     font-family: 'Bungee Inline', cursive;
     position: relative;
@@ -18,7 +18,14 @@ h1 {
   }
   
   .button {
-    font-size: 1em; 
+        font-size: 1em; 
+        width: 156px;
+        height: 42px;
+        background: #DDB493;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        padding:15px 30px;
+        
   }
   
   .footer a,
@@ -37,6 +44,7 @@ a {
 .font-solid{font-family: 'Bungee', cursive;
 }
 
+/*Aligned header*/
 header {
     display:flex;
     justify-content: space-between;
@@ -47,7 +55,6 @@ header {
     white-space: nowrap;
 }
 
-/*Aligned header*/
 
   
   .LogoHeader {
@@ -85,7 +92,7 @@ header {
     margin-top: 20px;
   }
 
- 
+ /*Homepage*/
 .tophome {
     display: flex;
     justify-content: center;
@@ -134,72 +141,85 @@ header {
         text-align: center;
   }
       
+  .bottom-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .homejackets {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Align items in the center */
     margin-top: 20px;
     padding: 0 20px;
   }
+ 
+
   
   .homejackets h2 {
     margin-bottom: 10px;
+    color:black;
+    background-color:#DDB493;
+
   }
   
   .homepage-jackets {
     display: flex;
-    justify-content: flex-start;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; /* Align items horizontally in the center */
+   
+  
   }
   
   .homepage-jackets img {
-    width: 150px;
-    height: 180px;
-    object-fit: cover;
+    width: 160px;
+    height: auto;
+    object-fit: contain;
   }
   
+  .buttonhome {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #DDB493; 
+    padding: 10px 20px; 
+    border-radius: 4px;
+    color: #3D4147;
+    text-decoration: none;
+  }
+
+  /*Bottom of homepage*/
   
-    
-    
-  .buttonhome{
-margin-top: 20px;
-margin-left: 150px;
+  
+  
+ .bottom-home h2 { 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:black;
+    background-color:#8AA1AC;
+}
+
+  .bottom-home img {
+    width: 160px; 
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px; 
   }
   
-
-
-@media screen and (max-width:600px){
-.menu{
-    width:100%;
-    max-height: 0;
-    overflow: hidden;
-}
-.list{
-    flex-direction: column;
-    align-items: center;
-    padding:20px;
-}
-.navbar label{
-    display: inline-flex;
-    align-items: center;
-    cursor:pointer;
-}
-#toggler:checked .menu{
-    max-height: 100%;
-}
-}
+  .bottom-home p {
+    font-style: italic;
+    max-width: 600px;
+    margin-top: 20px;
+    word-wrap: break-word; 
+  }
 
 
 /*Working on footer*/
 
-.button{
-width: 156px;
-height: 42px;
-background: #DDB493;
-border: 1px solid #000000;
-border-radius: 4px;
-padding:15px 30px;
-}
+
 
 footer {
     width: 100%; 
@@ -208,6 +228,7 @@ footer {
     justify-content: space-between;
     background-color:#3D4147;
     color: #DDB493;
+    align-items: center;
     min-height: 50px;
     flex-wrap: wrap;
     
@@ -215,27 +236,47 @@ footer {
     }
  footer a{
     display:inline-flex;
-    margin-top: 15px;
     margin-left: 10px;
     margin-right: 10px;
+    align-items: center;
     justify-content: space-between;
     color: #DDB493;
  }
 
-footer p{
-    display:inline-flex;
-    margin-top: 15px;
-    margin-right: 10px;
-    justify-content: space-between;
-}
+ footer .Socials {
+    display: flex;
+    gap:20px;
+    align-items: center;
+    text-align: center; 
+ }
+
+
 
 footer img{
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
     margin-right: 10px;
+    object-fit: contain;
     justify-content: space-between;
     color:#DDB493
 }
+
+@media screen and (max-width:600px){
+    .menu{
+        width:100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding:20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor:pointer;
+    }
+    #toggler:checked .menu {
+        max-height: 100%;
+    }
