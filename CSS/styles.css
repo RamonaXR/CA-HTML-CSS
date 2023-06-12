@@ -35,6 +35,7 @@ h1 {
 
 main{
     flex:1;
+    
 }
 
 a {
@@ -58,7 +59,9 @@ header {
 
   
   .LogoHeader {
-    margin-right: 50px;
+    display: flex;
+    justify-content: flex-start;
+    
     margin-top: 15px;
    
   }
@@ -67,7 +70,7 @@ header {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    margin-right: 100px;
+   
     
   }
   
@@ -80,16 +83,15 @@ header {
   }
 
    header .icons{
-    margin-right: 30px;
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 15px;
+
    }
-  .icons img{
-    display: inline-block;
-    width: 24px;
-    height: 24px;
+
+  header .icons img {
     object-fit: contain;
-    justify-content: space-between;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 15px;
   }
 
  /*Homepage*/
@@ -109,24 +111,17 @@ header {
   }
   
   .hometext {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: absolute;
     align-items: center;
     text-align: center;
     color:#DDB493;
-    z-index: 1;
     padding: 0 20px;
   }
   
-  .hometext h1 {
-    font-size: 32px;
-  }
   
-  .hometext h2 {
-    font-size: 24px;
-  }
   
   .hometext .button {
         display: inline-flex;
@@ -150,8 +145,9 @@ header {
 
   .homejackets {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    align-items: center; /* Align items in the center */
+    align-items: center; 
     margin-top: 20px;
     padding: 0 20px;
   }
@@ -167,10 +163,9 @@ header {
   
   .homepage-jackets {
     display: flex;
+    justify-content: flex-start; 
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center; /* Align items horizontally in the center */
-   
   
   }
   
@@ -194,7 +189,11 @@ header {
   /*Bottom of homepage*/
   
   
-  
+  .section-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
  .bottom-home h2 { 
     margin-top: 20px;
     margin-bottom: 10px;
