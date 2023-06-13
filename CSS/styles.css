@@ -2,7 +2,9 @@
 /*Global layouts*/
 
 body {
+    display: flex;
 
+    flex-direction: column;
     font-family: "Bungee Inline", cursive;
   
     position: relative;
@@ -10,14 +12,14 @@ body {
     max-width: 1440px;
   
     margin: 0 auto;
-  
-    display: flex;
-  
-    flex-direction: column;
+
+    min-height: 100vh;
   
     font-size: 1em;
   
-  }
+}
+  
+  
   
   h1 {
   
@@ -39,6 +41,11 @@ body {
   
   .button {
   
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
     font-size: 1em;
   
     background: #ddb493;
@@ -49,19 +56,20 @@ body {
   
     padding: 15px 30px;
 
-    margin-top: 10px;
-
     margin: 0 auto;
 
-    display: inline-flex;
+    margin-top: 1em;
+
+    margin-bottom: 1em;
+
+}
+
   
-    align-items: center;
   
-    justify-content: center;
-  
-    text-align: center;
-  
+  .price {
+    font-size: 1.5em;
   }
+  
   
   
   
@@ -301,7 +309,9 @@ body {
   
     display: flex;
   
-    justify-content: flex-start;
+    justify-content: center;
+
+    align-items: center;
   
     flex-wrap: wrap;
   
@@ -313,8 +323,10 @@ body {
   
   
   .homepage-jackets img {
-  
-    width: 160px;
+    
+    
+    
+    max-width: 160px;
   
     height: auto;
   
@@ -348,14 +360,17 @@ body {
   
   
   .h2-home {
-
+    display: flex;
+    justify-content: center;
     background-color: #8aa1ac;
+    
+    
     
   }
 
   
   .bottom-home img {
-  
+    
     width: 160px;
   
     height: auto;
@@ -411,9 +426,7 @@ body {
 
 
 
-.h2-jackets {
-    color:black;
-}
+
 
 .h2-top {
     font-style: italic;
@@ -457,12 +470,46 @@ margin-bottom: 10px;
 
 /*Checkout*/
 
-.checkout  {
-  justify-content: space-between;
-  align-items: flex-start;
+.container {
+    justify-content: space-between; (600px align-items: row;)
+}
+.checkout {
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.jacket-info {
+    padding:30px;
+    margin: 10%;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightgray;
     
 }
-  
+
+.image-cart, img {
+    
+    max-width: 250px;
+    height: auto;
+}
+
+
+.delivery img {
+    
+    object-fit: contain;
+    margin-right: 0.5em;
+}
+
+
+
+
+
+
+
+
   /*Working on footer*/
   
   
@@ -512,8 +559,10 @@ margin-bottom: 10px;
   footer .Socials {
   
     display: flex;
+
+    margin-left: 10px;
   
-    gap: 20px;
+    gap: 10px;
   
     align-items: center;
   
