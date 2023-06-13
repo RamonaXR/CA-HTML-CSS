@@ -340,7 +340,7 @@ body {
   
   
   
-  /*Bottom of homepage*/
+  /*Right of homepage*/
   
   
   
@@ -362,7 +362,7 @@ body {
   .h2-home {
     display: flex;
     justify-content: center;
-    background-color: #8aa1ac;
+    background: rgb(0,0,0,0.1);
     
     
     
@@ -401,7 +401,6 @@ body {
 
     max-width: 50%;
     text-align: center;
-
 }
 
 
@@ -419,18 +418,21 @@ body {
 
 .h1-top {
     color: black;
-    background-color: #8aa1ac;
+    background: rgba(172, 172, 188, 0.526);
 }
 
 
 
-
+.h2-jackets {
+    color:#8aa1ac;
+}
 
 
 
 .h2-top {
     font-style: italic;
-    color:#3d4147;
+    color: black;
+    background-color:#cae1eb;
     text-align: center;
     font-size: 1em;
     
@@ -471,7 +473,7 @@ margin-bottom: 10px;
 /*Checkout*/
 
 .container {
-    justify-content: space-between; (600px align-items: row;)
+    justify-content: space-between; 
 }
 .checkout {
     align-items: center;
