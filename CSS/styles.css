@@ -41,10 +41,6 @@ body {
   
     font-size: 1em;
   
-    width: 156px;
-  
-    height: 42px;
-  
     background: #ddb493;
   
     border: 1px solid #000000;
@@ -54,7 +50,7 @@ body {
     padding: 15px 30px;
 
     margin-top: 10px;
-    
+
     margin: 0 auto;
 
     text-align: center;
@@ -106,6 +102,11 @@ body {
   }
   
   
+  .flex-wrap  {
+
+    flex-wrap: wrap;
+    
+    }
   
   
   .flex-column {
@@ -309,22 +310,6 @@ body {
   
   
   
-  
-  .homejackets h2 {
-  
-    margin-bottom: 10px;
-  
-    color: black;
-  
-    text-align: center;
-  
-    /* background-color: #ddb493; */
-  
-  }
-  
-  
-  
-  
   .homepage-jackets {
   
     display: flex;
@@ -408,7 +393,88 @@ body {
   }
   
   
+  /*Products*/
+
+  .products section {
+
+    max-width: 50%;
+    text-align: center;
+
+}
+
+
+
+.product-jackets {
+      
+    width: 210px;
   
+    height: 260px;
+  
+    object-fit: contain;
+  
+  }
+
+
+.h1-top {
+    color: black;
+    background-color: #8aa1ac;
+}
+
+
+
+
+
+.h2-jackets {
+    color:black;
+}
+
+.h2-top {
+    font-style: italic;
+    color:#3d4147;
+    text-align: center;
+    font-size: 1em;
+    
+}
+
+
+
+.producttext {
+    font-size: 1em;
+    
+}
+
+.item {
+    max-width: 50%;
+   
+}
+
+
+.item img {
+    max-width: 100%;
+   
+  }
+
+.email-search {
+    margin-bottom: 10 px;
+}
+
+.newsletter {
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+
+/*Checkout*/
+
+.checkout  {
+  justify-content: space-between;
+  align-items: flex-start;
+    
+}
   
   /*Working on footer*/
   
@@ -490,7 +556,8 @@ body {
   
   
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px)
+   {
   
     .menu {
   
@@ -529,7 +596,7 @@ body {
     }
   
   
-  
+   
   
     .homejackets {
   
