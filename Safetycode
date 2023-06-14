@@ -617,6 +617,28 @@ footer img{
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
-  }
+    
 
 
+    .checkout{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .jacket-info {
+      align-items: center;
+      flex-direction: column;
+      background-color: lightgray;
+
+
+      <div class="h2-top">
+      <h2>Take on the thoughest conditions:<h2> <h2>in our extreme jackets that are
+      designed to keep you<h2><h2>warm, dry, and protected</h2>
+    </div>
+
+
+    div class="h2-top">
+              <h2>Experience the ultimate outdoor freedom:</h2> <h2> with our lightweight
+                  jackets </h2> <h2>that provide the perfect balance of warmth and mobility</h2>
+                </div>
