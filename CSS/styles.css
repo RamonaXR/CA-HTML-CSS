@@ -533,6 +533,41 @@ margin-bottom: 10px;
     padding: 20px;
 }
 
+/*contact-page*/
+
+.container-contact {
+
+    flex: 1 0 350px;
+}
+
+.contact-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+
+
+
+.info {
+
+    flex-direction: column;
+   justify-content: center;
+}
+
+.info img {
+    object-fit: contain;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+   
+}
+
+
+
+
+
   /*Working on footer*/
   
   
