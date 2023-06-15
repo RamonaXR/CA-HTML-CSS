@@ -11,35 +11,55 @@
   </head>
   <body>
     <header>
-        <div>
-            <logo>
-                <img src="Images/LogoHeader.svg" alt="LogoHeader">
-          </logo>
-          <p>Keeping you warm since 1975</p>
-        </div>
-        <nav>
-          <a href="#">New Arrivals</a> <a href="#">Women</a> <a href="#">Men</a>
+        <span href="#" class="LogoHeader">
+          <img src="Images/LogoHeader.svg" alt="LogoHeader" />
+        </span>
+  
+        <nav class="menu">
+          <ul class="list">
+            <li><a href="#">New Arrivals</a></li>
+  
+            <li><a href="#">Women</a></li>
+  
+            <li><a href="#">Men</a></li>
+          </ul>
         </nav>
-        <form>
-            <label for="search"><input type="text" id="search" name="search">
-            <button type="submit"></button>
-        </form>
-        <nav>
-            <a href="#">Cart</a>
-          </nav>
-    </header>
+  
+        <div class="icons">
+          <img src="Images/searchicon.svg" alt="search" />
+  
+          <img src="Images/carticon.svg" alt="cart" />
+        </div>
+      </header>
     <main>
+        <section class="flex flex-wrap flex-1 sucsess">
+            <h1>Sucsess!</h1>
+            <img src="Images/check.png" alt="check-symbol">
+            <h2>Thank you for your purchase!</h2>
+            <p>your ordernumber is: 554908</p>
+                <p>we will send you an email with order confirmation and tracking details</p>
+        </section>
+        <section>
+            <p>dont forget to subsrice to our newsletter for the latest news and offers!</p>
+            <h3>Subscribe to our newsletter</h3>
+            <div class="newsletter">
+                <input type="email" name="email" placeholder="type your email" />
+              </div>
+              <a href="#" class="button">Buy now</a>
+        </section>
     </main>
     <footer>
-        <nav>
-            <a href="#">About</a> <a href="#">Contact</a>
-          </nav>
-          <p>Follow us on</p>
-          <div class="Socials">
-              <a>Facebook</a>
-              <a>Insta</a>
-              <a>Youtube</a>
-          </div>
-    </footer>
+        <nav><a href="#">About</a> <a href="#">Contact</a></nav>
+  
+        <div class="Socials">
+          <p>Follow us on:</p>
+  
+          <img src="Images/facebookicon.svg" alt="facebook" />
+  
+          <img src="Images/instaicon.svg" alt="instagram" />
+  
+          <img src="Images/youtubeicon.svg" alt="youtube" />
+        </div>
+      </footer>
   </body>
   </html>

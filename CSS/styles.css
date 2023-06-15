@@ -547,8 +547,15 @@ margin-bottom: 10px;
     
 }
 
+.contact-page img{
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
 
-
+.contact-top {
+    color:#ddb493;
+}
 
 .info {
 
@@ -648,7 +655,7 @@ margin-bottom: 10px;
   }
   
   
-  
+ 
   
   @media screen and (max-width: 600px)
    {
