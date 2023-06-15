@@ -398,9 +398,7 @@ body {
   /*Products*/
 
 
-  .container-products {
-    justify-content: space-between;
-}
+
 
 
   .products  {
@@ -412,8 +410,8 @@ body {
 
 
 .h1-top {
-    
-    background-color: #8aa1ac;
+    margin: 0;
+    background-color: lightgrey;
 }
 
 .jackets img {
@@ -429,15 +427,13 @@ body {
    color: #8aa1ac;
 }
 
-.item {
-    flex: 1 0 350px;
-   
-}
+
 
 
 .item img {
     max-width: 100%;
     object-fit: cover;
+    
    
   }
 
@@ -572,7 +568,14 @@ margin-bottom: 10px;
 }
 
 
+/*Checkout-sucsess*/
 
+.sucsess {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 
   /*Working on footer*/
