@@ -642,3 +642,15 @@ footer img{
               <h2>Experience the ultimate outdoor freedom:</h2> <h2> with our lightweight
                   jackets </h2> <h2>that provide the perfect balance of warmth and mobility</h2>
                 </div>
+
+
+
+                .container-products {
+                    justify-content: space-between;
+                }
+
+
+                .item {
+                    flex: 1 0 350px;
+                   
+                }
