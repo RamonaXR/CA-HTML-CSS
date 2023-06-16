@@ -922,12 +922,14 @@ body {
 
 
 
-.p-spes {
-    padding: 20px;
+.p-2 {
+    
     text-align: left;
 }
 
-
+.weight {
+    padding:10px;
+}
 
 
 .producttext {
