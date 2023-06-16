@@ -922,9 +922,9 @@ body {
 
 
 
-.p-2 {
+.p-spes {
     
-    text-align: left;
+    color: #67777e;
 }
 
 .weight {
@@ -1304,7 +1304,7 @@ margin-bottom: 10px;
 
 .blue {
 
-    color: #8aa1ac;
+    color: #6b7b82;
 
 }
 
@@ -1313,7 +1313,7 @@ margin-bottom: 10px;
 
 .orange {
 
-    color: #ddb493;
+    color: #a27856;
 
    
 
@@ -1480,7 +1480,11 @@ margin-bottom: 10px;
 
   }
 
- 
+ @media (max-width:800px) {
+    .homejackets {
+         flex-direction:column ;
+    }
+ }
 
   @media only screen and (max-width: 600px) {
 
