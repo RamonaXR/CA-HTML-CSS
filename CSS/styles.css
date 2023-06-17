@@ -510,7 +510,6 @@ body {
 
     display: flex;
 
-    color: #222427;
 
     gap: 25px;
 
@@ -523,7 +522,7 @@ body {
   }
 
   .list a {
-    color: #222427;
+    color: #0c0d0e;
   }
 
   .dropdown a{
