@@ -334,10 +334,12 @@ header .icons img {
   max-width: 100%;
 }
 
-.item img {
-  max-width: 100%;
+.lightweight-products {
+  justify-content: center;
+}
 
-  object-fit: cover;
+.jackets-heading {
+  text-align: center;
 }
 
 .email-search {
