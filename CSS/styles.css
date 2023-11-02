@@ -396,6 +396,16 @@ header .icons img {
 
 /*Spesific*/
 
+.sticky {
+position: relative;
+}
+
+option {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
 .container-spesific {
   flex: 1 0 350px;
 }
@@ -425,6 +435,7 @@ header .icons img {
 }
 
 .sizes {
+
   padding: 20px;
 
   gap: 20px;
