@@ -1,3 +1,6 @@
+
+// Fetch jackets
+
 const url = "https://api.noroff.dev/api/v1/rainy-days";
 
 export async function getProducts() {
@@ -9,3 +12,5 @@ export async function getProducts() {
 
     return products;
 }
+
+
