@@ -12,4 +12,3 @@ export function createHtmlForProduct (product, parent) {
     createJacket(product, parent);
 }
 
-createJacket();

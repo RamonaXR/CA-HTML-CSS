@@ -1,17 +1,19 @@
+import { createJacket } from "./../renderHTML/createJacket.js";
+import { url, spesificContainer } from "../products/index.js";
+
 // Single jacket 
 
-const url = "https://api.noroff.dev/api/v1/rainy-days/<id>" 
-
-
-
-export async function getProductById(id) {
-    console.log(`${id}`); 
-    const response = await fetch(`${baseUrl}/${id}`);
-    console.log(response); 
-    if (!response.ok) {
-        throw new Error(`${response.status}`);
+export async function fetchProduct () {
+    try {
+        const response = await fetch(url);
+        const details = await response.json();
+        createJacket(details, spesificContainer);
+      return details;
+    } catch (error) {
+        console.log(error);
+        
     }
-    const product = await response.json();
-    console.log(product); 
-    return product;
 }
+
+
+
