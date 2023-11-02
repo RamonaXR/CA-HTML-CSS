@@ -10,6 +10,7 @@ export const spesificContainer = document.querySelector(".container-spesific");
 export const url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
 
 const jacketContainer = document.querySelector(".homepage-jackets");
+export const title = document.querySelector("title");
 
 
 function renderJackets(jackets) {
