@@ -28,7 +28,7 @@ switch (location.pathname) {
             console.log(error);
         }
         break; 
-    case "/Spesific":
+    case "/spesific":
         fetchProduct ();
         break;
     default:
