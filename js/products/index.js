@@ -21,21 +21,41 @@ function renderJackets(jackets) {
 }
 
 switch (location.pathname) {
-    case "/Product.html":
+    case "/Product":
         try {
             createHtmlHome (products, lightweight);
         } catch (error) {
             console.log(error);
         }
         break; 
-    case "/Spesific.HTML":
+    case "/Spesific":
         fetchProduct ();
         break;
-    case "/Index.html":
+    default:
         const e = selectJackets(products);
         renderJackets(e);
         //selectJackets(products);
         break;
 }
+
+
+
+//switch (location.pathname) {
+    //case "/Product.html":
+        //try {
+            //createHtmlHome (products, lightweight);
+        //} catch (error) {
+            //console.log(error);
+        //}
+        //break; 
+    //case "/Spesific.HTML":
+        //fetchProduct ();
+        //break;
+    //case "/Index.html":
+        //const e = selectJackets(products);
+        //renderJackets(e);
+        //selectJackets(products);
+        //break;
+//}
 
 
