@@ -336,6 +336,7 @@ header .icons img {
 
 .lightweight-products {
   justify-content: center;
+  flex-direction: column;
 }
 
 .jackets-heading {
