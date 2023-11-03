@@ -21,7 +21,7 @@ function renderJackets(jackets) {
 }
 
 switch (location.pathname) {
-    case "/Product":
+    case "/product":
         try {
             createHtmlHome (products, lightweight);
         } catch (error) {
