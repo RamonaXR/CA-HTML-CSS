@@ -9,11 +9,13 @@ const id = getProductIdFromURL();
 export const spesificContainer = document.querySelector(".container-spesific");
 export const url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
 
-const jacketContainer = document.querySelector(".homepage-jackets");
+
 export const title = document.querySelector("title");
 
 
 function renderJackets(jackets) {
+    const jacketContainer = document.querySelector(".homepage-jackets");
+    console.log(jacketContainer);
     jacketContainer.innerHTML = "";
     for(let i = 0; i < 3; i++) {
         jacketContainer.innerHTML += `<img src="${jackets[i]}" alt="jackets"/>`
@@ -29,7 +31,7 @@ switch (location.pathname) {
         }
         break; 
     case "/spesific":
-        fetchProduct ();
+        fetchProduct();
         break;
     default:
         const e = selectJackets(products);
