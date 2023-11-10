@@ -1,5 +1,5 @@
 export function createJacket(product, parent) {
-    parent.innerHTML = `<section class="flex flex-1 flex-wrap left-side">
+      parent.innerHTML = `<section class="flex flex-1 flex-wrap left-side">
     <h1>${product.title}</h1>
     <img src="${product.image}" alt="Our finest jacket">
     </section>
@@ -33,4 +33,5 @@ export function createJacket(product, parent) {
             <img src="Images/Stars.svg" alt="stars" />
           </div>
         </section>`
-}
+
+    }

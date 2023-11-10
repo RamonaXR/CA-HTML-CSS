@@ -2,11 +2,8 @@ import { getProducts } from "./../data/fetchAPI.js";
 
 export let products = await getProducts();
 
-console.log(products);
-
 
 export function createHtmlHome(product, parent) {
-
 parent.innerHTML = `<h1 class="jackets-heading">Our jackets</h1>`;
 for (let i = 0; i < products.length; i++) {
     parent.innerHTML += `<section class="jackets">
@@ -23,5 +20,7 @@ for (let i = 0; i < products.length; i++) {
                                 </div>
                             </section>`;
 }
+
 }
+
 

@@ -11,53 +11,35 @@ export const url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
 
 
 export const title = document.querySelector("title");
-
+const jacketContainer = document.querySelector(".homepage-jackets");
 
 function renderJackets(jackets) {
-    const jacketContainer = document.querySelector(".homepage-jackets");
-    console.log(jacketContainer);
     jacketContainer.innerHTML = "";
     for(let i = 0; i < 3; i++) {
         jacketContainer.innerHTML += `<img src="${jackets[i]}" alt="jackets"/>`
     }
-}
+} 
+
 
 switch (location.pathname) {
     case "/product":
         try {
             createHtmlHome (products, lightweight);
         } catch (error) {
-            console.log(error);
+            lightweight.innerHTML = <div class="error">Ups, an error occured while loading this page.</div>;
+            console.log("Ups, an error occured");
         }
         break; 
     case "/spesific":
         fetchProduct();
         break;
     default:
-        const e = selectJackets(products);
-        renderJackets(e);
-        //selectJackets(products);
+        try {
+            const e = selectJackets(products);
+            renderJackets(e);
+        } catch (error) {
+            jacketContainer.innerHTML = <div class="error">Ups, an error occured while loading this page.</div>;
+            console.log("Ups, an error occured");
+        }
         break;
 }
-
-
-
-//switch (location.pathname) {
-    //case "/Product.html":
-        //try {
-            //createHtmlHome (products, lightweight);
-        //} catch (error) {
-            //console.log(error);
-        //}
-        //break; 
-    //case "/Spesific.HTML":
-        //fetchProduct ();
-        //break;
-    //case "/Index.html":
-        //const e = selectJackets(products);
-        //renderJackets(e);
-        //selectJackets(products);
-        //break;
-//}
-
-
