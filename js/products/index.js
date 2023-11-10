@@ -38,7 +38,7 @@ switch (location.pathname) {
             const e = selectJackets(products);
             renderJackets(e);
         } catch (error) {
-            jacketContainer.innerHTML = <div class="error">Ups, an error occured while loading this page.</div>;
+            jacketContainer.innerHTML = `<div class="error">Ups, an error occured while loading this page.</div>`;
             console.log("Ups, an error occured");
         }
         break;
