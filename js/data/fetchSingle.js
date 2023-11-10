@@ -13,7 +13,7 @@ export async function fetchProduct () {
       return details;
     } catch (error) {
         console.log(error);
-        spesificContainer.innerHTML = <div class="error">Ups, an error occurred while loading this page.</div>
+        spesificContainer.innerHTML = `<div class="error">Ups, an error occurred while loading this page.</div>`;
     }
 }
 
