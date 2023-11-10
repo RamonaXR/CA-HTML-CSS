@@ -26,7 +26,7 @@ switch (location.pathname) {
         try {
             createHtmlHome (products, lightweight);
         } catch (error) {
-            lightweight.innerHTML = <div class="error">Ups, an error occured while loading this page.</div>;
+            lightweight.innerHTML = `<div class="error">Ups, an error occured while loading this page.</div>`;
             console.log("Ups, an error occured");
         }
         break; 
